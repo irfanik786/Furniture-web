@@ -1,0 +1,278 @@
+.main-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    height:100px;
+    background-color: #f2e1d9;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 25px;
+  }
+  .logo{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 140px;
+  }
+  .ull {
+    list-style:none;
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+    margin-left: 190px;
+  }
+  li:hover{
+    color: #fe8e58;
+  }
+  .nav-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .nav-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .search-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar span{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    cursor: pointer;
+  }
+  .search-input{
+    outline: 0;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #C2B6BB;
+    width: 280px;
+    height: 42px;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .ser-icon{
+    width: 55px;
+    height: 25px;
+  }
+  .my-ac{
+    cursor: pointer;
+  }
+  .my-ac:hover{
+    cursor: pointer;
+    color: #fe8e58;
+  }
+  .cart{
+    position: relative;
+    cursor: pointer;
+  }
+  .cart span{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background: #FD8F5F;
+    border-radius: 30px;
+    width: 22px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    left: 12px;
+    top: 14px;
+    display: inline-block;
+  }
+  .cart-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width:1300px) {
+    .ull {
+      gap: 20px;
+      cursor: pointer;
+      margin-left: 190px;
+    }
+    .nav-1{
+      gap: 0px;
+    }
+    .nav-2{
+      gap: 20px;
+    }
+  }
+
+  @media (max-width:1100px) {
+    .search-input{
+      width: 180px;
+    }
+  }
+
+  @media (max-width:996px) {
+    .ull {
+      background-color: #4c4c4c;
+      color: white;
+      width: 95%;
+      margin-top: 70px;
+      height: 300px;
+      position: absolute;
+      z-index: 2;
+      right: 20px;
+      top: 0;
+      flex-direction: column;
+      font-weight: 400;
+      padding: 30px;
+      border-radius: 5px;
+      display: none;
+    }
+    li{
+      padding-bottom: 10px;
+      width: 100%;
+    }
+    .active{
+      display: block;
+    }
+     .hamburger{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      outline: none;
+      padding: 5px 10px;
+      font-size: 18px;
+     }
+     .hamburger :nth-child(1) {
+      font-size: 20px;
+      margin-bottom: -2px;
+     }
+     .main-nav{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      gap: 100px;
+      font-size: 20px;
+      font-weight: 600;
+      padding-left: 120px;
+    }
+    .search-input{
+      width: 280px;
+      font-size: 20px;
+    }
+    .nav-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  @media (max-width:924px) {
+    .main-nav{
+      gap: 80px;
+    }
+    .search-input{
+      width: 200px;
+      font-size: 16px;
+    }
+    .logo{
+      height: 80px;
+    }
+    .main-nav{
+      height:80px;
+      padding-right: 0px;
+    }
+    .nav-1{
+      margin-right: -100px;
+    }
+  }
+  @media (max-width:710px) {
+    /* .main-nav{
+      gap: 0px;
+    }
+    .nav-1{
+      margin-right: -50px;
+    } */
+    .nav-2{
+      gap: 20px;
+    }
+    .my-ac{
+      font-size: 16px;
+    }
+}
+@media (max-width:600px) {
+  .hamburger{
+    gap: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+   }
+   .hamburger :nth-child(1) {
+    font-size: 15px;
+   }
+   .my-ac{
+    font-size: 14px;
+  }
+  .search-input{
+    width: 150px;
+    font-size: 13px;
+  }
+}
+@media (max-width:500px) {
+  .search-input{
+    width: 105px;
+    font-size: 10px;
+  }
+  .ser-icon{
+    width: 15px;
+  }
+  .my-ac{
+    font-size: 12px;
+  }
+  .cart span{
+    font-size: 12px;
+    border-radius: 30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    left: 10px;
+    top: 12px;
+  }
+  .cart-icon{
+    width: 25px;
+  }
+}
+@media (max-width:430px) {
+  .my-ac{
+    font-size: 10px;
+  }
+  .nav-2{
+    gap: 10px;
+  }
+  .hamburger{
+    gap: 2px;
+    padding: 1px 3px;
+    font-size: 10px;
+   }
+   .hamburger :nth-child(1) {
+    font-size: 13px;
+   }
+   .search-input{
+    width: 90px;
+    font-size: 8px;
+  }
+}
