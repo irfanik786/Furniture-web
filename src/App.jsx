@@ -6,6 +6,7 @@ import Product1 from './Components/Product1';
 import Product2 from './Components/Product2';
 import Product3 from './Components/Product3';
 import Footer from './Components/Footer';
+import ScrollButton from './Components/ScrollButton';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Product2 />
       <Product3 />
       <Footer />
+      <ScrollButton />
     </div>
   )
 }

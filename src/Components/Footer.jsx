@@ -44,7 +44,7 @@ const Footer = () => {
               Suspendisse varius enim in<br /> eros elementum tristique. Duis<br /> cursus,
               mi quis viverra ornare,<br /> eros dolor interdum nulla.
             </p>
-            <div class="footer-social">
+            <div className="footer-social">
               <a className="footer-icon">
                 <FaTwitter/>
               </a>
