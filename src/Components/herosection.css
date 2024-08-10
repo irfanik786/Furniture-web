@@ -40,7 +40,7 @@
     color: #7F85A8;
     margin-bottom: 20px;
 }
-
+/* 
 .hero-content button {
     background: #FD8F5F;
     padding: 27px 44px;
@@ -48,16 +48,15 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 15px;
-    line-height: 0; /* Changed to 1 to ensure proper alignment */
+    line-height: 0;
     letter-spacing: 1px;
     border: 0;
     display: inline-block;
     position: relative;
     overflow: hidden;
     transition: color 0.4s ease;
-    z-index: 1; /* Ensures text is above the pseudo-element */
-    text-align: center; /* Center the text horizontally */
-
+    z-index: 1; 
+    text-align: center;
 }
 
 .hero-content button::before {
@@ -67,18 +66,60 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #e9855a; /* Hover background color */
+    background: #e9855a;
     transition: left 0.4s ease;
-    z-index: 0; /* Ensure the pseudo-element is behind the text */
+    z-index: 0; 
 }
 
 .hero-content button:hover::before {
     left: 0;
+    z-index: 1;
+}
+
+.hero-content button:hover {
+    color: #fff; 
+} */
+
+.hero-content button {
+    background: #FD8F5F;
+    padding: 27px 44px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0; /* Ensure proper alignment */
+    letter-spacing: 1px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    z-index: 0; /* Ensures text is above the pseudo-element */
+    text-align: center; /* Center the text horizontally */
+}
+
+.hero-content button::before {
+    content: 'DISCOVER MORE';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e9855a; /* Hover background color */
+    transition: left 0.4s ease;
+    z-index: 0; /* Ensure the pseudo-element is behind the text */
+    padding-top: 25px;
+}
+
+.hero-content button:hover::before {
+    left: 0;
+    z-index: 0; /* Ensure the pseudo-element stays behind the text */
 }
 
 .hero-content button:hover {
     color: #fff; /* Text color on hover */
 }
+
 /*  
 .hero-content :nth-child(4) {
     background: #FD8F5F;

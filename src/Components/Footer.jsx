@@ -10,7 +10,7 @@ import { FaPinterestP } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <div className="services">
         <div className="serv">
           <img src={services1} alt="services1" />

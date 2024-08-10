@@ -3,7 +3,7 @@ import './product2.css';
 
 const Product2 = () => {
   return (
-    <div className='main-divv'>
+    <div className='main-divv' id='product2'>
       <div className='divv-1'>
         <h2>PRODUCTS YOU MAY LIKE</h2>
         <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi</p>
@@ -26,7 +26,7 @@ const Product2 = () => {
             <p>$367</p>
         </div>
       </div>
-      <div>
+      <div className='dis-btns'>
         <a className='dis-btn'>DISCOVER MORE</a>
       </div>
       <div className='divv-3'>

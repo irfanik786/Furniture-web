@@ -4,6 +4,7 @@ import "./navbar.css";
 import { CiSearch } from "react-icons/ci";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-scroll"; // npm i react-scroll
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -38,9 +39,9 @@ const Navbar = () => {
           className="logo"
         />
         <ul className={openMenu ? "ull active" : "ull"}>
-          <li>Home</li>
-          <li>Product</li>
-          <li>About</li>
+          <li><Link to="hero" smooth={true} duration={1000}>Home</Link></li>
+          <li><Link to="product1" smooth={true} duration={1000}>Product</Link></li>
+          <li><Link to="product2" smooth={true} duration={1000}>About</Link></li>
           <li
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
@@ -89,7 +90,8 @@ const Navbar = () => {
             </div>
           )}
           </li>
-          <li>Contact</li>
+          <li>
+          <Link to="footer" smooth={true} duration={1000}>Contact</Link></li>
         </ul>
       </div>
       <div className="nav-2">

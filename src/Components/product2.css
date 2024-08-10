@@ -63,20 +63,50 @@
     font-weight: 600; 
     text-align: center;
 }
+
 .dis-btn{
     margin: 50px 0;
     border: 1px solid #FD8F5F;
     color: #FD8F5F;
-    background: none;
+    background: transparent;
     border-radius: 0px;
     text-transform: uppercase;
     padding: 17px 42px;
     cursor: pointer;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
+    transition: color 0.4s ease;
+    z-index: 0;
+    text-align: center;
 }
+
+.dis-btn::before {
+    content: 'DISCOVER MORE';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #e9855a; 
+    transition: left 0.4s ease;
+    z-index: 0;
+    padding-top: 15px;
+}
+
+.dis-btn:hover::before {
+    left: 0;
+    z-index: 0; 
+}
+
+.dis-btn:hover {
+    color: #fff;
+}
+
 .divv-3{
     margin-top: 50px;
     display: flex;

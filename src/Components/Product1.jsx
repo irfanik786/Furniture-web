@@ -9,7 +9,7 @@ const Product1 = () => {
     setSelectedItem(item);
   };
   return (
-    <>
+    <div id="product1">
       <div className="popular-products">
         <h1>POPULAR PRODUCTS</h1>
         <p>
@@ -162,7 +162,7 @@ const Product1 = () => {
           <a>DISCOVER MORE</a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -35,10 +35,13 @@ color: white;  */
   border-radius: 50%;
   line-height: 48px;
   border: 2px solid transparent;
-  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);  
   cursor: pointer; 
 
   @media screen and (max-width: 920px) {
     left: 90%;
+  }
+  @media screen and (max-width: 550px) {
+    left: 85%;
   }
 `;
